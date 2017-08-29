@@ -1,0 +1,82 @@
+@import './index.css';
+
+.App {
+  text-align: left;
+}
+
+.AppLogo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  position: relative;
+  top: 10px;
+}
+
+.AppHeader {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.Grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header";
+}
+.Grid .Header {
+  grid-area: header;
+}
+
+.Grid2 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Grid2 p:first-child {
+  padding: 10px;
+}
+.Grid2 p:last-child {
+  margin: 10px;
+}
+
+.AppIntro {
+  font-size: large;
+}
+
+.Main {
+  composes: Body from './Mixins.css';
+  composes: AnimationContainer from './AnimatePage.css';
+}
+
+.section {
+  composes: AnimationSection from './AnimatePage.css';
+  overflow: scroll;
+  background-color: #fff;
+  color: #333;
+}
+
+.closed {
+  top: 100vh;
+  height: 0;
+}
+
+.Header {
+  composes: h2 from './Mixins.css';
+}
+
+.code {
+  composes: pre from './Mixins.css';
+}
+
+.demoImage {
+  composes: img from './Mixins.css';
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+

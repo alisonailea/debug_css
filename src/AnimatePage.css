@@ -1,0 +1,11 @@
+.AnimationContainer {
+    position: relative;
+};
+
+.AnimationSection {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    transition: all 1s;
+}

@@ -1,0 +1,16 @@
+.hoverBox {
+    border: 1px solid transparent;
+}
+.hoverBox:active .active {
+    color: green;
+}
+
+.hoverBox:focus .focus {
+    color: blue;
+}
+.hoverBox:hover .hover {
+    color: rebeccapurple;
+}
+.hoverBox:visited .visited {
+    color: red;
+}
