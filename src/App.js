@@ -158,6 +158,13 @@ class App extends Component {
 							<li>Click on a property to see which module the style is coming from.</li>
 						</ul>
 					</section>
+					<section className={cx(styles.section, {
+						[styles.closed]: this.state.currentSlide != 5,
+					})}>
+						<header className={styles.Header}><h2>Questions!!</h2></header>
+						<p>find me on twitter @alisonailea or Github</p>
+						<p>find these slides at <a href='https://github.com/alisonailea/debug_css'>github.com/alisonailea/debug_css</a></p>
+					</section>
 				</main>
 			</div>
 		);
